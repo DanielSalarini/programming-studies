@@ -4,5 +4,8 @@ import './Footer.css'
 
 export default props =>
     <footer className="footer">
-        Rodape
+        <span>
+            Desenvolvido com <i className={`fa fa-${props.icon} text-danger`}></i> por
+            <strong> Daniel Salarini</strong>
+        </span>
     </footer>
