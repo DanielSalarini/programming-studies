@@ -7,9 +7,25 @@
     <script src="/js/vue.min.js"></script>
 </head>
 <body class="exercicio">
-
+    <div id="app">
+        <saudacao nome="Ana" idade=25></saudacao>
+        <saudacao nome="Bia" idade=50></saudacao>
+        <saudacao nome="Julia" idade=18></saudacao>
+    </div>
     <script>
-        // ...
+        Vue.component('saudacao', {
+            props: ['nome', 'idade'],
+            template: `
+                <div>
+                    <div>Bom Dia {{ nome }}!</div>
+                    <div>Você tem {{ idade }} anos.</div>
+                </div>
+            `
+        })
+
+        new Vue({
+            el: "#app"
+        })
     </script>
 </body>
 </html>
