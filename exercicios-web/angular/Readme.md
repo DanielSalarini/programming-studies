@@ -1,0 +1,1 @@
+## Angular class in project CRUD ##
