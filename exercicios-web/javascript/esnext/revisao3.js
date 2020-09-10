@@ -18,10 +18,22 @@ pessoa.ola()
 console.log(pessoa.nome, pessoa.idade)
 
 // Class
-class Animal {}
+class Animal {
+    comer() {
+        return 'Hummm'
+    }
+}
+class Gato extends Animal {
+    falar() {
+        return 'Miau'
+    }
+}
 class Cachorro extends Animal {
     falar() {
         return 'Au au'
     }
 }
 console.log(new Cachorro().falar())
+console.log(new Cachorro().comer())
+console.log(new Gato().falar())
+console.log(new Gato().comer())
