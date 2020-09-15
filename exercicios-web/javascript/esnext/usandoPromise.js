@@ -12,7 +12,7 @@ const getTurma = letra => {
             })
             
             res.on('end', () => {
-                try{
+                try {
                     resolve(JSON.parse(resultado))
                 } catch(e){
                     reject(e)
