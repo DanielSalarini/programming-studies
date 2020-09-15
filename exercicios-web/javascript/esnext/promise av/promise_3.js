@@ -1,7 +1,5 @@
 function gerarNumerosEntre(min, max) {
-    if(min > max) {
-        [min, max] = [max , min]
-    }
+    if(min > max) [min, max] = [max , min]
 
     return new Promise(resolve => {
         const fator = Math.random() * (max - min + 1)
