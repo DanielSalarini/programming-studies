@@ -1,0 +1,11 @@
+// Terminal
+
+-- Inserir Dados
+db.<nomeDaCollection>.insert({JSON})
+
+-- Atualizar ou inserir Dados
+db.<nomeDaCollection>.save({JSON})
+
+-- Consultar
+db.<nomeDaCollection>.find()
+db.<nomeDaCollection>.find().pretty()

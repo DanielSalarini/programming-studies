@@ -1,0 +1,19 @@
+// Terminal
+
+-- Inicializa
+mongo
+
+-- Banco de dados disponiveis
+show dbs
+
+-- Escolhe o Banco de dados
+use <nome>
+
+-- Criar Collection
+db.createCollection('nome')
+
+-- Mostrar Collection
+show collections
+
+-- Excluir Collection
+db.<nome>.drop()
