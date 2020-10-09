@@ -1,0 +1,25 @@
+// Terminal
+
+-- Consultar
+db.<nomeDaCollection>.find()
+
+-- Consultar com Formatação em JSON
+db.<nomeDaCollection>.find().pretty()
+
+-- Consultar um unico registro
+db.<nomeDaCollection>.findOne({filtroDoRegistro})
+
+-- Para usar o or ou and 
+$or: [], $and: []
+
+-- Consultar algum atributo 
+$exists
+
+-- Pular 
+.skip(quantidade)
+
+-- Limite
+.limit(quantidade)
+
+-- Consultar quantos registro a na Collection
+.count()
