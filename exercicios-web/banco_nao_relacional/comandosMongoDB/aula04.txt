@@ -1,0 +1,7 @@
+// Terminal
+
+-- Update set
+db.<nomeDaCollection>.update({filtro}, {$set: {valor}})
+
+-- Update push
+db.<nomeDaCollection>.update({filtro}, {$push: {valor}})

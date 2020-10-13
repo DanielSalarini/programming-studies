@@ -1,0 +1,4 @@
+// Terminal
+
+-- Remove
+db.<nomeDaCollection>.remove({filtro})
