@@ -6,5 +6,17 @@ db.empresas.aggregate([
         foreignField: "_id",
         as: "estado"
     }},
+    {$unwind: "$estado"}
+]).pretty()
+
+db.empresas.aggregate([
+    {$match: {nome: "Vale"}},
+    {$lookup: {
+        from: "estados",
+        localField: "cidadeId",
+        foreignField: "cidades._id",
+        as: "estado"
+    }},
     {$unwind: "$estado"},
+    {$unwind: "$estado.cidades"}
 ]).pretty()
