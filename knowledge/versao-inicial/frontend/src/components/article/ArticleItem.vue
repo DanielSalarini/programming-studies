@@ -5,8 +5,8 @@
                 <img v-if="article.imageUrl"
                     :src="article.imageUrl"
                     height="150" width="150" alt="Article">
-                <img v-else
-                    src="@/assets/article.png"
+                <img v-else 
+                    src="@/assets/article.png" 
                     height="150" width="150" alt="Article">
             </div>
             <div class="article-item-info">
